@@ -104,11 +104,14 @@ const Home = () => {
                                 <Form.Control type="password" name='password' onChange={getdata} placeholder="Password" />
                             </Form.Group>
                             
-                             <Form.Group className="mb-3 col-lg-6" controlId="role">
-                             
-                             <Form.Control type="role" name='role' onChange={getdata} placeholder="Role" />
-                             
-                            </Form.Group>
+                                <Form.Group className="mb-3 col-lg-6" controlId="role">
+  
+  <Form.Control as="select" name="role" onChange={getdata}>
+    <option value="">Select a Role</option>
+    <option value="admin">Admin</option>
+    <option value="user">User</option>
+  </Form.Control>
+</Form.Group>
                            
                             <Button variant="primary" className='col-lg-6' onClick={addData} style={{ background: "rgb(67, 185, 127)" }} type="submit">
                                 Submit
