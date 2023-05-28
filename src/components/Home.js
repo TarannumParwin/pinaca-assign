@@ -117,7 +117,7 @@ const Home = () => {
                                 Submit
                             </Button>
                         </Form>
-                        <p className='mt-3'>Already Have an Account <span><NavLink to="/login">SignIn</NavLink></span> </p>
+                       
                     </div>
                     <SIgn_img />
                 </section>
